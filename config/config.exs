@@ -12,7 +12,7 @@ config :bigbrain,
 # Configures the endpoint
 config :bigbrain, BigbrainWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Sw4YsxC+5+a5N/PCXjISDAtRTxEpYs+PpEtDDsgAXXA+w6zjICpFEh/cr8jxJjRD",
+  secret_key_base: "UJ+TiW8k7Ix570kHi8Zlp5gg/Gm2G86s6o3Kn1b2h7Z8z+yvYm2lzi5MAAwNpnI2",
   render_errors: [view: BigbrainWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Bigbrain.PubSub,
            adapter: Phoenix.PubSub.PG2]

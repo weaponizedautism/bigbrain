@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :bigbrain, BigbrainWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4001, ip: {0,0,0,0}],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -50,9 +50,9 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :bigbrain, Bigbrain.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "",
   database: "bigbrain_dev",
   hostname: "localhost",
   pool_size: 10

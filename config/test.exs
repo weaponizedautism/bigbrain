@@ -11,9 +11,9 @@ config :logger, level: :warn
 
 # Configure your database
 config :bigbrain, Bigbrain.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "",
   database: "bigbrain_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

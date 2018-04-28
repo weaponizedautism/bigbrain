@@ -35,7 +35,7 @@ defmodule BigbrainWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_bigbrain_key",
-    signing_salt: "lZfTiMgC"
+    signing_salt: "IrEVgDdt"
 
   plug BigbrainWeb.Router
 
